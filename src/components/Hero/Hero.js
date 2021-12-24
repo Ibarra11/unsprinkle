@@ -1,11 +1,14 @@
-import React from 'react';
-import styled from 'styled-components/macro';
+import React from "react";
+import styled from "styled-components/macro";
 
 const Hero = () => {
   return (
     <Wrapper>
-      <HeroImage src="/images/hero-img.jpg" />
-      <Swoop src="/swoop.svg" />
+      <HeroImage
+        src="/images/hero-img.jpg"
+        alt="An example of the photos distributed, cat on black background"
+      />
+      <Swoop src="/swoop.svg" alt="" />
     </Wrapper>
   );
 };
@@ -31,6 +34,7 @@ const Swoop = styled.img`
   position: absolute;
   left: 0;
   right: 0;
+
   /*
     Overhang by a couple px to prevent any pixel-rounding
     display issues
